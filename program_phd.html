@@ -1,32 +1,115 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./style_home.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <!-- Animate Slide Start -->
+    <title>Ph.D</title>
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
+      href="https://unpkg.com/bs-brain@2.0.4/components/heroes/hero-2/assets/css/hero-2.css"
     />
-    <link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/tiny-slider.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Animate Slide End -->
+
+    <!-- ELO start -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500|Open+Sans">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <style>
+        /* .accordion {
+            margin-top: 60px; /* Add space above accordion */
+        } */
+        .accordion .card {
+            border-radius: 0;
+            border-width: 1px 0 1px 0;
+        }
+        .accordion .card:first-child {
+            /* border-top: none; */
+        }
+        .accordion .card .card-header {
+            background: #fff;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-radius: 0;
+            margin-bottom: -2px;
+            font-family: "Roboto", sans-serif;
+        }
+        .accordion .card-header:hover {
+            background: #f8f8f8;
+        }
+        .accordion .card-header h2 span {
+            float: left;
+            margin-top: 10px;
+        }
+        .accordion .card-header .btn {
+            font-size: 1.04rem;
+            font-weight: 500;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            top: -2px;
+        }
+        .accordion .card-header i {
+            float: right;
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: relative;
+            top: 5px;
+        }
+        .accordion .card-header button:hover {
+            color: #23384e;
+        }
+        .accordion .card-body {
+            background: #eaeaea;
+            color: #595959;
+        }
+        .accordion .highlight {
+            color: #fff;
+            background: #202d3c !important;
+        }
+        </style>
+        <script>
+        $(document).ready(function(){
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function(){
+                $(this).siblings(".card-header").find(".btn i").html("remove");
+                $(this).prev(".card-header").addClass("highlight");
+            });
+            
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function(){
+                $(this).parent().find(".card-header .btn i").html("remove");
+            }).on('hide.bs.collapse', function(){
+                $(this).parent().find(".card-header .btn i").html("add");
+            });
+            
+            // Highlight open collapsed element 
+            $(".card-header .btn").click(function(){
+                $(".card-header").not($(this).parents()).removeClass("highlight");
+                $(this).parents(".card-header").toggleClass("highlight");
+            });
+        });
+        </script>
+    <!-- ELO end -->
+
+    <!-- Table section start -->
+    <link href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+                 rel="stylesheet"
+                 integrity=
+    "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                 crossorigin="anonymous">
+    <!-- Table section end -->
   </head>
-  <>
+  <body>
     <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top"
@@ -88,374 +171,133 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Slide Start -->
-    <div class="container-fluid" style="padding: 0">
-      <div
-        id="carousel"
-        class="carousel slide hero-slides"
-        data-ride="carousel"
-      >
-        <!-- <ol class="carousel-indicators">
-          <li class="active" data-target="#carousel" data-slide-to="0"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ol> -->
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active boat">
-            <div class="container h-100 d-md-block">
-              <div class="row align-items-center h-100">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                  <div class="caption animated fadeIn">
-                    <h2 class="animated fadeInLeft">Boat Excursions</h2>
-                    <p class="animated fadeInRight">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Cras tristique nisl vitae luctus sollicitudin. Fusce
-                      consectetur sem eget dui tristique, ac posuere arcu
-                      varius.
-                    </p>
-                    <a class="animated fadeInUp btn delicious-btn" href="#"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="carousel-item sea">
-            <div class="container h-100 d-md-block">
-              <div class="row align-items-center h-100">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                  <div class="caption animated fadeIn">
-                    <h2 class="animated fadeInLeft">
-                      Discover the canyon by the sea
-                    </h2>
-                    <p class="animated fadeInRight">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Cras tristique nisl vitae luctus sollicitudin. Fusce
-                      consectetur sem eget dui tristique, ac posuere arcu
-                      varius.
-                    </p>
-                    <a class="animated fadeInUp btn delicious-btn" href="#"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div> -->
-        <!-- </div> -->
-        <!-- <div class="carousel-item river">
-            <div class="container h-100 d-md-block">
-              <div class="row align-items-center h-100">
-                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                  <div class="caption animated fadeIn">
-                    <h2 class="animated fadeInLeft">
-                      Explore the river valley
-                    </h2>
-                    <p class="animated fadeInRight">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Cras tristique nisl vitae luctus sollicitudin. Fusce
-                      consectetur sem eget dui tristique, ac posuere arcu
-                      varius.
-                    </p>
-                    <a class="animated fadeInUp btn delicious-btn" href="#"
-                      >Learn more</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <a
-          class="carousel-control-prev"
-          href="#carousel"
-          role="button"
-          data-slide="prev"
+    <!-- Hero section start -->
+    <!-- Hero 2 - Bootstrap Brain Component -->
+    <section class="bsb-hero-2 px-3">
+      <div class="container overflow-hidden">
+        <div
+          class="row gy-3 gy-lg-0 align-items-lg-center justify-content-lg-between"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div> -->
-      </div>
-      <!-- Slide End -->
-
-      <!-- Research Cluster Start -->
-      <div class="container" style="margin-top: 10vh; margin-bottom: 1vh">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Research Cluster</h1>
-          <p class="fs-5 text-muted">
-            Quickly build an effective pricing table for your potential
-            customers with this Bootstrap example. It’s built with default
-            Bootstrap components and utilities with little customization.
-          </p>
-        </div>
-      </div>
-
-      <div class="container" style="margin-bottom: 5vh">
-        <div class="row pt-5 m-auto">
-          <div class="col-md-6 col-lg-3 pb-3">
-            <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
-            <div
-              class="card card-custom bg-white border-white border-0"
-              style="height: 450px"
-            >
-              <div
-                class="card-custom-img"
-                style="
-                  background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);
-                "
-              ></div>
-              <div class="card-custom-avatar">
-                <img
-                  class="img-fluid"
-                  src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
-                  alt="Avatar"
-                />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  You can also set maximum height on and the card will not
-                  expand, instead a scrollbar in the card body will appear.
-                </p>
-                <p class="card-text">
-                  Some example text to show the scrollbar.
-                </p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, te vix omittam fastidii, enim
-                  paulo omnes ea has, illud luptatum no qui. Sed ea qualisque
-                  urbanitas, purto elit nec te. Possim inermis antiopam ut eum.
-                  Eos te zril labore laboramus, quem erant nam in. Ut sed
-                  molestie antiopam. At altera facilisis mel.
-                </p>
-              </div>
-              <div
-                class="card-footer"
-                style="background: inherit; border-color: inherit"
-              >
-                <a href="#" class="btn btn-primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-3">
-            <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
-            <div
-              class="card card-custom bg-white border-white border-0"
-              style="height: 450px"
-            >
-              <div
-                class="card-custom-img"
-                style="
-                  background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);
-                "
-              ></div>
-              <div class="card-custom-avatar">
-                <img
-                  class="img-fluid"
-                  src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
-                  alt="Avatar"
-                />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  You can also set maximum height on and the card will not
-                  expand, instead a scrollbar in the card body will appear.
-                </p>
-                <p class="card-text">
-                  Some example text to show the scrollbar.
-                </p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, te vix omittam fastidii, enim
-                  paulo omnes ea has, illud luptatum no qui. Sed ea qualisque
-                  urbanitas, purto elit nec te. Possim inermis antiopam ut eum.
-                  Eos te zril labore laboramus, quem erant nam in. Ut sed
-                  molestie antiopam. At altera facilisis mel.
-                </p>
-              </div>
-              <div
-                class="card-footer"
-                style="background: inherit; border-color: inherit"
-              >
-                <a href="#" class="btn btn-primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-3">
-            <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
-            <div
-              class="card card-custom bg-white border-white border-0"
-              style="height: 450px"
-            >
-              <div
-                class="card-custom-img"
-                style="
-                  background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);
-                "
-              ></div>
-              <div class="card-custom-avatar">
-                <img
-                  class="img-fluid"
-                  src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
-                  alt="Avatar"
-                />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  You can also set maximum height on and the card will not
-                  expand, instead a scrollbar in the card body will appear.
-                </p>
-                <p class="card-text">
-                  Some example text to show the scrollbar.
-                </p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, te vix omittam fastidii, enim
-                  paulo omnes ea has, illud luptatum no qui. Sed ea qualisque
-                  urbanitas, purto elit nec te. Possim inermis antiopam ut eum.
-                  Eos te zril labore laboramus, quem erant nam in. Ut sed
-                  molestie antiopam. At altera facilisis mel.
-                </p>
-              </div>
-              <div
-                class="card-footer"
-                style="background: inherit; border-color: inherit"
-              >
-                <a href="#" class="btn btn-primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 pb-3">
-            <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
-            <div
-              class="card card-custom bg-white border-white border-0"
-              style="height: 450px"
-            >
-              <div
-                class="card-custom-img"
-                style="
-                  background-image: url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg);
-                "
-              ></div>
-              <div class="card-custom-avatar">
-                <img
-                  class="img-fluid"
-                  src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
-                  alt="Avatar"
-                />
-              </div>
-              <div class="card-body" style="overflow-y: auto">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  You can also set maximum height on and the card will not
-                  expand, instead a scrollbar in the card body will appear.
-                </p>
-                <p class="card-text">
-                  Some example text to show the scrollbar.
-                </p>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, te vix omittam fastidii, enim
-                  paulo omnes ea has, illud luptatum no qui. Sed ea qualisque
-                  urbanitas, purto elit nec te. Possim inermis antiopam ut eum.
-                  Eos te zril labore laboramus, quem erant nam in. Ut sed
-                  molestie antiopam. At altera facilisis mel.
-                </p>
-              </div>
-              <div
-                class="card-footer"
-                style="background: inherit; border-color: inherit"
-              >
-                <a href="#" class="btn btn-primary">Option</a>
-                <a href="#" class="btn btn-outline-primary">Other option</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Research Cluster End -->
-
-      <!-- Program section start -->
-      <div class="container" style="margin-top: 20vh; margin-bottom: 20vh">
-        <div class="row align-items-center">
-          <div class="col-lg-4 mb-3 mb-md-0">
-            <span class="display-4 fw-normal"
-              >Programs</span
-            >
-            <p class="fs-5 text-muted" style="margin-top: 2vh;">
-              Quickly build an effective pricing table for your potential
-              customers with this Bootstrap example. It’s built with default
-              Bootstrap components and utilities with little customization.
+          <div class="col-12 col-lg-6 order-1 order-lg-0">
+            <h2 class="display-3 fw-bold mb-3">Ph.D</h2>
+            <p class="fs-4 mb-5">
+              Powerful, extensible, and feature-packed frontend toolkit. Build
+              and customize with Sass, utilize prebuilt grid system and
+              components, and bring projects to life with powerful JavaScript
+              plugins.
             </p>
-            <a href="#" class="lead">Meet our people</a>
-          </div>
-          <!-- card item -->
-          <div class="col-lg-4 mb-3 mb-md-0">
-            <div class="card mb-4 rounded-3 shadow-sm card-custom bg-white border-white border-0">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Research Plan</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $0<small class="text-muted fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
-                </button>
-              </div>
+            <div class="d-grid gap-2 d-sm-flex">
+              <button
+                type="button"
+                class="btn btn-primary bsb-btn-xl rounded-pill"
+              >
+                Apply Now
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-primary bsb-btn-xl rounded-pill"
+              >
+                Details
+              </button>
             </div>
           </div>
-          <!-- card item -->
-          <div class="col-lg-4 mb-3 mb-md-0">
-            <div class="card mb-4 rounded-3 shadow-sm card-custom bg-white border-white border-0">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Coursework Plan</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  $0<small class="text-muted fw-light">/mo</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>10 users included</li>
-                  <li>2 GB of storage</li>
-                  <li>Email support</li>
-                  <li>Help center access</li>
-                </ul>
-                <button
-                  type="button"
-                  class="w-100 btn btn-lg btn-outline-primary"
-                >
-                  Sign up for free
-                </button>
-              </div>
-            </div>
+          <div class="col-12 col-lg-5 text-center">
+            <img
+              class="img-fluid"
+              loading="lazy"
+              src="./assets/img/hero-img-1.jpg"
+              alt="Art of Design"
+              style="
+                -webkit-mask-image: url(./assets/img/hero-img-blob-1.svg);
+                mask-image: url(./assets/img/hero-img-blob-1.svg);
+              "
+            />
           </div>
         </div>
       </div>
-    </div>
-    <!-- Program section end -->
+    </section>
+    <!-- Hero section end -->
 
-    <!-- Footer start -->
+    <!-- ELO section start -->
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="clearfix mb-0">
+                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Collapsible Group Item #1 <i class="material-icons">add</i></a>									
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Collapsible Group Item #2 <i class="material-icons">add</i></a>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Collapsible Group Item #3 <i class="material-icons">add</i></a>                     
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Collapsible Group Item #4 <i class="material-icons">add</i></a>                               
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ELO section end -->
+    
+    <!-- Table section start -->
+     <div class="container" style="margin-top: 10vh;">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Stream</th>
+                            <th>Section</th>
+                            <th>Roll_No</th>
+                            <th>College</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First Year</td>
+                            <td>Computer Science Engineering</td>
+                            <td>CSE A</td>
+                            <td>1445698658</td>
+                            <td>Geeksforgeeks Education Institute</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </div>
+    <!-- Table section end -->
+
+            <!-- Footer start -->
     <!-- <div class="container">
       <!-- Footer 9 - Bootstrap Brain Component -->
       <footer class="py-3 py-md-4 py-xl-5">
@@ -751,27 +593,5 @@
       </footer>
     </div> -->
     <!-- Footer end -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Slide Script Start -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="text/javascript"
-      scr="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"
-    ></script>
-    <!-- Slide Script End -->
   </body>
 </html>
