@@ -14,14 +14,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }  
 #carousel .carousel-item.boat{
-  background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png");
+  background-image:url("https://a49.co.th/uploads/sub49_projects/596/gallery_6141_20210205191252.JPG");
 }
-/* #carousel .carousel-item.sea{
-  background-image:url("https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg");
-}
-#carousel .carousel-item.river{
-  background-image:url("https://static4.depositphotos.com/1017908/346/i/450/depositphotos_3469606-stock-photo-baby-tree-frog-on-the.jpg");
-} */
+
 #carousel .carousel-item{
   height:100vh;
   width:100%;
