@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="./research_cluster.css" />
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -38,66 +42,91 @@
     />
   </head>
   <body>
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light fixed-top"
-      style="background-color: #e3f2fd"
-      aria-label="Eighth navbar example"
-    >
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="./sorces/math_logo-1024x553.png"
-            style="width: 100px; padding: 10px 0 10px 10px"
-            alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsExample07"
-          aria-controls="navbarsExample07"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample07">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Dropdown</a
+          <!--Visible only on mobile -->
+          <a class="navbar-brand d-block d-sm-none d-lg-none" href="#">
+          <img src="./sorces/polymer_logo.png" height="40" alt="">
+          </a>
+          <!-- Hidden only on mobile-->
+          <a class="navbar-brand d-none d-sm-block" href="#">
+              <img src="./sorces/polymer_logo.png" height="65" alt="">
+          </a>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarsExample07"
+              aria-controls="navbarsExample07"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
               >
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample07">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <!-- Home Menu -->
+              <li class="nav-item px-2">
+                  <a class="nav-link active" aria-current="page" href="#"
+                  >Home</a>
+              </li>
+              <!-- About Menu -->
+              <li class="nav-item dropdown px-2">
+                  <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >About</a
+                  >
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./vision.html">Vision Mission</a></li>
+                  <li><a class="dropdown-item" href="./staff.html">Staff</a></li>
+                  </ul>
+              </li>
+              <!-- Program Menu -->
+              <li class="nav-item dropdown px-2">
+                  <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Programs</a
+                  >
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Master Degree</a></li>
+                      <li><a class="dropdown-item" href="./program_phd.html">Doctor Degree</a></li>
+                  </ul>
+              </li>    
+              <!-- Research Menu -->
+              <li class="nav-item dropdown px-2">
+                  <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Research</a
+                  >
+                  <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./research_cluster.html">Research Cluster</a></li>
+                  <li><a class="dropdown-item" href="./Lab_profile copy.html">Laboratory</a></li>
+                  </ul>
+              </li>
+              <!-- News Menu -->
+              <li class="nav-item px-2">
+                  <a class="nav-link" href="./news_research.html">News</a>
+              </li>
               </ul>
-            </li>
-          </ul>
-          <form role="search">
-            <button class="btn btn-outline-success" type="submit">Apply</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
+              <a href="https://graduate.mahidol.ac.th/admission-apply/" target="_blank">
+                  <button type="button" class="btn btn-outline-primary">
+                  Apply Now!</button>
+              </a>
+          </div>
+      </div>  
+  </nav>
+  <!-- Navbar Section -->
 
     <!-- Feature card start -->
     <div class="container py-5">
@@ -1397,50 +1426,30 @@
       <!-- Content section end 4-->
 
     <!-- Footer start -->
-    <!-- <div class="container">
+    <div class="container">
       <!-- Footer 9 - Bootstrap Brain Component -->
       <footer class="py-3 py-md-4 py-xl-5">
 
         <!-- Logo - Bootstrap Brain Component -->
-        <div>
-          <div class="container border-bottom pb-3 pb-md-4">
-            <div class="row gy-3 align-items-center">
-              <div class="col-12 col-sm-6x col-md-4 col-xl-3">
-                <div class="footer-logo-wrapper">
-                  <a href="#!">
-                    <img src="./assets/img/bsb-logo.svg" alt="BootstrapBrain Logo" width="141" height="46">
-                  </a>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6x col-md-8 col-xl-9">
-                <div class="link-wrapper">
-                  <ul class="m-0 list-unstyled d-flex gap-2 gap-sm-3 gap-md-4">
-                    <li>
-                      <a href="#!" class="fw-bold link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75">
-                        Platform
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!" class="fw-bold link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75">
-                        Solutions
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!" class="fw-bold link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75">
-                        Resources
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#!" class="fw-bold link-underline-opacity-0 link-opacity-75-hover link-underline-opacity-100-hover link-offset-1 link-dark link-opacity-75">
-                        Pricing
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <h4 class="mb-3 fw-bold fs-6" style="padding-top: 5%;">Polymer Science and Technology Programme</h4>
+                <p>Department of Chemistry, Faculty of Science, Mahidol University Salaya Campus Phutthamonthon Sai 4 Rd, Salaya, <br>Phutthamonthon District, Nakhon Pathom 73170</p>
+                <p>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
+                    </svg>
+                    +66(0)-2201-5110-3 
+                </p>
+                
+                
+                  
             </div>
-          </div>
-        </div>
+            <div class="col-sm-8">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.1065707464613!2d100.32251308361404!3d13.792985780646617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2938bd03803e5%3A0x96597767a7e3ad97!2z4LiE4LiT4Liw4Lin4Li04LiX4Lii4Liy4Lio4Liy4Liq4LiV4Lij4LmMIOC4oeC4q-C4suC4p-C4tOC4l-C4ouC4suC4peC4seC4ouC4oeC4q-C4tOC4lOC4pSDguKjguLLguKXguLLguKLguLI!5e0!3m2!1sth!2sth!4v1719750748199!5m2!1sth!2sth" 
+                width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+         </div>
 
         <!-- Widgets - Bootstrap Brain Component -->
         <section class="py-4 py-md-5 py-xl-6 py-xxl-8">
@@ -1690,7 +1699,11 @@
           </div>
         </div>
       </footer>
-    </div> -->
+    </div>
     <!-- Footer end -->
+  
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>
