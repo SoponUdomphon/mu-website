@@ -16,6 +16,41 @@
       href="https://cdn.jsdelivr.net/gh/livecanvas-team/ninjabootstrap/dist/css/bootstrap.min.css"
       media="all"
     />
+
+    <style>
+      /* General styles */
+.profile-details {
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.email-section {
+  display: flex; /* Ensure inline display for email details */
+}
+
+/* Large screens (desktop) */
+@media (min-width: 768px) {
+  .profile-details {
+    text-align: left; /* Align left on large screens */
+  }
+
+  .email-section {
+    justify-content: flex-start; /* Align email elements to left */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+  .profile-details {
+    text-align: center; /* Center profile details on mobile */
+  }
+
+  /* Optionally hide email section on mobile (uncomment if needed) */
+  /* .email-section {
+    display: none;
+  } */
+}
+
+    </style>
   </head>
   <>
     <!-- Navbar Section -->
@@ -149,118 +184,671 @@
           <!-- /lc-block -->
         </div>
       </div>
-      <div class="row">
+      <div class="i-am-centered" style="margin: auto; max-width: 1100px;">
+        <div class="row">
   
-        <div class="col-md-4 py-4">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-sm-12 profile-card-container">
-              <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
-                <img
-                  src="./sorces/Single Photo/1. Krisda Suchiva.jpg"
-                  alt="Dr. Krisda Suchiva"
-                  class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
-                  style="width: 150px; height: 150px;"
-                  loading="lazy"
-                />
-                <div class="profile-details text-center text-md-start">
-                  <div editable="rich">
-                    <a href="https://science.mahidol.ac.th/expertise/search.php?q=Krisda%20Suchiva"><h5><strong>Dr. Krisda Suchiva</strong></h5></a>
-                  </div>
-                  <small
-                    editable="inline"
-                    class="text-secondary"
-                    style="letter-spacing: 1px"
-                  >Assistant Professor,
-                    <span style="color: rgb(42, 117, 223)">Honorary Advisor</span>
-                  </small>
-                  <div editable="rich">
-                    <p style="display: flex; align-items: center;  justify-content: center; padding-top: 5px;"> <img
-                      src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
-                      style="width: 24px; height: 24px; margin-right: 5px;"
-                      alt="Email"
-                    />
-                    krisda.suc@mahidol.ac.th
-                  </p>
+          <!-- Dr. Krisda Suchiva -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/1. Krisda Suchiva.jpg"
+                    alt="Dr. Krisda Suchiva"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Krisda%20Suchiva"><h5><strong>Dr. Krisda Suchiva</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor,
+                      <span style="color: rgb(42, 117, 223)">Honorary Advisor</span>
+                    </small>
+                    <div editable="rich">
+                      <p style="display: flex; align-items: center;  justify-content: center; padding-top: 5px;"> <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      krisda.suc@mahidol.ac.th
+                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+  
+          <!-- Dr. Pranee Phinyocheep -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/6. Pranee Phinyocheep.jpg"
+                    alt="Dr. Pranee Phinyocheep"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Pranee%20Phinyocheep"><h5 style="font-size: 19px;"><strong>Dr. Pranee Phinyocheep</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Professor,
+                      <br><span style="color: rgb(42, 117, 223)">Honorary Advisor</span>
+                    </small>
+                    <div editable="rich">
+                      <p style="display: flex; align-items: center;  justify-content: center; padding-top: 5px;"> <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      pranee.phi@mahidol.ac.th
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Dr. Pramuan Tangboriboonrat -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/2. Pramuan Tangboriboonrat.jpg"
+                    alt="Dr. Pramuan Tangboriboonrat"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Pramuan%20Tangboriboonrat"><h5 style="width: 300px;"><strong>Dr. Pramuan Tangboriboonrat</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Distinguished Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">pramuan.tan@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-md-4 py-4">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-sm-12 profile-card-container">
-              <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
-                <img
-                  src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=772&amp;q=80"
-                  alt="Dr. Krisda Suchiva"
-                  class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
-                  style="width: 150px; height: 150px;"
-                  loading="lazy"
-                />
-                <div class="profile-details text-center text-md-start">
-                  <div editable="rich">
-                    <a href="./staff_profile.html"><h5><strong>Dr. Krisda Suchiva</strong></h5></a>
-                  </div>
-                  <small
-                    editable="inline"
-                    class="text-secondary"
-                    style="letter-spacing: 1px"
-                  >Assistant Professor,
-                    <span style="color: rgb(42, 117, 223)">Honorary Advisor</span>
-                  </small>
-                  <div editable="rich">
-                    <p style="display: flex; align-items: center;  justify-content: center; padding-top: 5px;"> <img
-                      src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
-                      style="width: 24px; height: 24px; margin-right: 5px;"
-                      alt="Email"
-                    />
-                    krisda.suc@mahidol.ac.th
-                  </p>
+          <!-- Dr. Chakrit Sirisinha -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/3. Chakrit Sirisingha.jpg"
+                    alt="Dr. Chakrit Sirisinha"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Chakrit%20Sirisinha"><h5 style="width: 300px;"><strong>Dr. Chakrit Sirisinha</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">chakrit.sir@mahidol.ac.th</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-4 py-4">
-          <div class="row align-items-center">
-            <div class="col-md-6 col-sm-12 profile-card-container">
-              <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
-                <img
-                  src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=772&amp;q=80"
-                  alt="Dr. Krisda Suchiva"
-                  class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
-                  style="width: 150px; height: 150px;"
-                  loading="lazy"
-                />
-                <div class="profile-details text-center text-md-start">
-                  <div editable="rich">
-                    <a href="./staff_profile.html"><h5><strong>Dr. Krisda Suchiva</strong></h5></a>
-                  </div>
-                  <small
-                    editable="inline"
-                    class="text-secondary"
-                    style="letter-spacing: 1px"
-                  >Assistant Professor,
-                    <span style="color: rgb(42, 117, 223)">Honorary Advisor</span>
-                  </small>
-                  <div editable="rich">
-                    <p style="display: flex; align-items: center;  justify-content: center; padding-top: 5px;"> <img
-                      src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
-                      style="width: 24px; height: 24px; margin-right: 5px;"
-                      alt="Email"
-                    />
-                    krisda.suc@mahidol.ac.th
-                  </p>
+          <!-- Dr. Jitladda Sakdapipanich -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/4. Jitladda Sakdapipanich.jpg"
+                    alt="Dr. Jitladda Sakdapipanich"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Jitladda%20Sakdapipanich"><h5 style="width: 300px;"><strong>Dr. Jitladda Sakdapipanich</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">jitladda.sak@mahidol.ac.th</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <!-- Dr. Kalyanee Sirisinha -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/5. Kalyanee Sirisingha.jpg"
+                    alt="Dr. Kalyanee Sirisinha"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Kalyanee%20Sirisinha"><h5 style="width: 300px;"><strong>Dr. Kalyanee Sirisinha</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">kalyanee.sir@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+
+          <!-- Dr. Panya Sunintaboon -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/7. Panya Sunintaboon.jpg"
+                    alt="Dr. Panya Sunintaboon"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Panya%20Sunintaboon"><h5 style="width: 300px;"><strong>Dr. Panya Sunintaboon</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Associate Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">panya.sun@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+    
+          <!-- Dr. Sombat Thanawan -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/8. Sombat Thanawan.jpg"
+                    alt="Dr. Sombat Thanawan"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Sombat%20Thanawan"><h5 style="width: 300px;"><strong>Dr. Sombat Thanawan</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Associate Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">sombat.tha@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Supa Wirasate -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/9. Supa Wiraset.jpg"
+                    alt="Dr. Supa Wirasate"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Supa%20Wirasate"><h5 style="width: 300px;"><strong>Dr. Supa Wirasate</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Associate Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">supa.wir@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Taweechai Amornsakchai -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/10. Taweechai Amornsakchai.jpg"
+                    alt="Dr. Taweechai Amornsakchai"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Taweechai%20Amornsakchai"><h5 style="width: 300px;"><strong>Dr. Taweechai Amornsakchai</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Associate Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">taweechai.amo@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Thammasit Vongsetskul -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/640px-Unknown_person.jpg"
+                    alt="Dr. Thammasit Vongsetskul"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Thammasit%20Vongsetskul"><h5 style="width: 300px;"><strong>Dr. Thammasit Vongsetskul</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Associate Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">thammasit.von@mahidol.edu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Anyarat Watthanaphanit -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/12. Anyarat Watthanaphanit.jpg"
+                    alt="Dr. Anyarat Watthanaphanit"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Anyarat%20Watthanaphanit"><h5 style="width: 300px;"><strong>Dr. Anyarat Watthanaphanit</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor,
+                      <br><span style="color: rgb(42, 117, 223)">Program Director</span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">anyarat.wat@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Dr. Chayanisa Chitichotpanya -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/640px-Unknown_person.jpg"
+                    alt="Dr. Chayanisa Chitichotpanya"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Chayanisa%20Chitichotpanya"><h5 style="width: 300px;"><strong>Dr. Chayanisa Chitichotpanya</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">chayanisa.chi@mahidol.edu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Darapond Triampo -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/14. Darapond Triampo.jpg"
+                    alt="Dr. Darapond Triampo"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Darapond%20Triampo"><h5 style="width: 300px;"><strong>Dr. Darapond Triampo</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">darapond.tri@mahidol.edu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Manthana Jariyaboon -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Unknown_person.jpg/640px-Unknown_person.jpg"
+                    alt="Dr. Manthana Jariyaboon"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Manthana%20Jariyaboon"><h5 style="width: 300px;"><strong>Dr. Manthana Jariyaboon</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">manthana.jar@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Preeyanuch Junkong -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/16. Preeyanuch Junkong4.jpg"
+                    alt="Dr. Preeyanuch Junkong"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Preeyanuch%20Junkong"><h5 style="width: 300px;"><strong>Dr. Preeyanuch Junkong</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor
+                      <span style="color: rgb(42, 117, 223)"></span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">preeyanuch.jun@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Dr. Thanchanok Ratvijitvech -->
+          <div class="col-md-6 py-4">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-sm-12 profile-card-container">
+                <div class="profile-card d-flex flex-column flex-md-row align-items-center ">
+                  <img
+                    src="./sorces/Single Photo/17. Thanchanok Ratvijitvech.jpg"
+                    alt="Dr. Thanchanok Ratvijitvech"
+                    class="rounded-circle img-fluid me-md-4 mb-md-0 mb-4"
+                    style="width: 150px; height: 150px;"
+                    loading="lazy"
+                  />
+          
+                  <div class="profile-details text-center text-md-start">
+                    <div editable="rich">
+                      <a href="https://science.mahidol.ac.th/expertise/search.php?q=Thanchanok%20Ratvijitvech"><h5 style="width: 300px;"><strong>Dr. Thanchanok Ratvijitvech</strong></h5></a>
+                    </div>
+                    <small
+                      editable="inline"
+                      class="text-secondary"
+                      style="letter-spacing: 1px"
+                    >Assistant Professor,
+                      <br><span style="color: rgb(42, 117, 223)">Secretariat</span>
+                    </small>
+          
+                    <div class="email-section d-flex align-items-center justify-content-center justify-content-md-start" style="height: 35px;"> 
+                      <img
+                        src="https://help.ruk-com.in.th/wp-content/uploads/2022/11/blue-email-box-circle-png-transparent-icon-2.png"
+                        style="width: 24px; height: 24px; margin-right: 5px;"
+                        alt="Email"
+                      />
+                      <p style="padding-top: 13px;">thanchanok.rat@mahidol.ac.th</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+      </div>
+     
 
         
       
